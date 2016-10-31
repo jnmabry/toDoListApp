@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/toDoNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="ToDo Name"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/toDoDueDateEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toDoNameEdit"
+        android:hint="Due Date:" />
+
+    <EditText
+        android:id="@+id/toDoDueTimeEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toDoDueDateEdit"
+        android:hint="Due Time" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toDoDueTimeEdit"
+        android:hint="Comments" />
+
+    <EditText
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comments"
+        android:hint="Category" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgView"
+        android:icon="@android:drawable/ic_menu_save"
+        android:text="Submit"
+        android:title="submit" />
+
+    <Button
+        android:id="@+id/buttonLoadPicture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:layout_below="@+id/submit"
+        android:onClick="loadImagefromGallery"
+        android:text="Load Picture" >
+    </Button>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/category"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
